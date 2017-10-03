@@ -1,0 +1,57 @@
+# depslib dependency file v1.0
+1504883410 source:d:\c++\projects_c\glut_projects\sieve\draw.c
+	<GL/glut.h>
+	<stdlib.h>
+	<string.h>
+	<stdbool.h>
+	"List.h"
+
+1495136920 d:\c++\projects_c\glut_projects\sieve\list.h
+
+1495226206 source:d:\c++\projects_c\glut_projects\sieve\keyboard.c
+	<GL/glut.h>
+	<stdio.h>
+	<stdbool.h>
+	<limits.h>
+	"List.h"
+	"keyboard.h"
+
+1494712560 d:\c++\projects_c\glut_projects\sieve\keyboard.h
+
+1495136350 source:d:\c++\projects_c\glut_projects\sieve\list.c
+	<math.h>
+	<stdlib.h>
+	<stdio.h>
+	<stdbool.h>
+	<limits.h>
+	"List.h"
+
+1495280408 source:d:\c++\projects_c\glut_projects\sieve\main.c
+	<GL/glut.h>
+	<time.h>
+	<stdlib.h>
+	<stdio.h>
+	<stdbool.h>
+	<limits.h>
+	"List.h"
+	"keyboard.h"
+	"draw.h"
+	"mouse.h"
+	"const.c"
+
+1495136920 d:\c++\projects_c\glut_projects\sieve\draw.h
+
+1494711146 d:\c++\projects_c\glut_projects\sieve\mouse.h
+
+1495280364 d:\c++\projects_c\glut_projects\sieve\const.c
+
+1495280242 source:d:\c++\projects_c\glut_projects\sieve\mouse.c
+	<GL/glut.h>
+	<stdio.h>
+	<stdbool.h>
+	<stdlib.h>
+	<limits.h>
+	"List.h"
+	"mouse.h"
+	"draw.h"
+

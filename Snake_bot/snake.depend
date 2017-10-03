@@ -1,0 +1,60 @@
+# depslib dependency file v1.0
+1497954066 source:d:\c++\projects_c\glut_projects\snake 2\ai_play.c
+	<GL/glut.h>
+	<stdio.h>
+	<memory.h>
+	<stdlib.h>
+	"snake.h"
+	"game_tools.h"
+	"AI_PLAY.h"
+	"keyboard.h"
+	"const.h"
+
+1497897344 d:\c++\projects_c\glut_projects\snake 2\snake.h
+
+1497740616 d:\c++\projects_c\glut_projects\snake 2\game_tools.h
+
+1497889917 d:\c++\projects_c\glut_projects\snake 2\ai_play.h
+
+1497863478 d:\c++\projects_c\glut_projects\snake 2\keyboard.h
+
+1497903616 d:\c++\projects_c\glut_projects\snake 2\const.h
+
+1504884499 source:d:\c++\projects_c\glut_projects\snake 2\game_tools.c
+	<GL/glut.h>
+	<stdio.h>
+	<stdlib.h>
+	<limits.h>
+	<string.h>
+	<time.h>
+	"snake.h"
+	"game_tools.h"
+	"keyboard.h"
+	"const.h"
+
+1497863572 source:d:\c++\projects_c\glut_projects\snake 2\keyboard.c
+	<stdio.h>
+	<stdlib.h>
+	"snake.h"
+	"keyboard.h"
+	"game_tools.h"
+	"const.h"
+
+1504884547 source:d:\c++\projects_c\glut_projects\snake 2\main.c
+	<GL/glut.h>
+	<time.h>
+	<stdlib.h>
+	"snake.h"
+	"game_tools.h"
+	"keyboard.h"
+	"AI_PLAY.h"
+	"const.h"
+
+1497949668 source:d:\c++\projects_c\glut_projects\snake 2\snake.c
+	<GL/glut.h>
+	<stdio.h>
+	<stdlib.h>
+	"snake.h"
+	"game_tools.h"
+	"const.h"
+

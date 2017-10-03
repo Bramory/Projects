@@ -1,0 +1,58 @@
+# depslib dependency file v1.0
+1504885042 source:d:\c++\projects_c\glut_projects\strata\draw.c
+	<GL/glut.h>
+	<stdlib.h>
+	<string.h>
+	<stdbool.h>
+	"List.h"
+
+1496485549 d:\c++\projects_c\glut_projects\strata\list.h
+
+1496480740 source:d:\c++\projects_c\glut_projects\strata\keyboard.c
+	<GL/glut.h>
+	<stdio.h>
+	<stdbool.h>
+	<limits.h>
+	"List.h"
+	"keyboard.h"
+
+1494712560 d:\c++\projects_c\glut_projects\strata\keyboard.h
+
+1496933029 source:d:\c++\projects_c\glut_projects\strata\list.c
+	<math.h>
+	<stdlib.h>
+	<string.h>
+	<stdio.h>
+	<stdbool.h>
+	<limits.h>
+	"List.h"
+
+1496935790 source:d:\c++\projects_c\glut_projects\strata\main.c
+	<GL/glut.h>
+	<time.h>
+	<stdlib.h>
+	<stdio.h>
+	<ctype.h>
+	<string.h>
+	<stdbool.h>
+	<unistd.h>
+	<limits.h>
+	"List.h"
+	"keyboard.h"
+	"draw.h"
+	"mouse.h"
+
+1496480713 d:\c++\projects_c\glut_projects\strata\draw.h
+
+1494711146 d:\c++\projects_c\glut_projects\strata\mouse.h
+
+1496479903 source:d:\c++\projects_c\glut_projects\strata\mouse.c
+	<GL/glut.h>
+	<stdio.h>
+	<stdbool.h>
+	<stdlib.h>
+	<limits.h>
+	"List.h"
+	"mouse.h"
+	"draw.h"
+

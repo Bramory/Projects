@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1495990398 source:d:\c++\projects_c\glut_projects\levitate\keyboard.c
+	<GL/glut.h>
+	<stdio.h>
+	<stdbool.h>
+	<limits.h>
+	"keyboard.h"
+
+1494712560 d:\c++\projects_c\glut_projects\levitate\keyboard.h
+

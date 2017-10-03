@@ -1,0 +1,4 @@
+# depslib dependency file v1.0
+1495799054 source:d:\c++\projects_c\glut_projects\turnaround\main.cpp
+	<GL/glut.h>
+
