@@ -1,0 +1,61 @@
+# depslib dependency file v1.0
+1506516509 source:d:\c++\projects_c\3_semestr\lab2\checker.cpp
+	<GL/glut.h>
+	<cstdio>
+	<cstring>
+	<cmath>
+	<iostream>
+	"checker.h"
+	"const.h"
+	"draw.h"
+
+1506516457 d:\c++\projects_c\3_semestr\lab2\checker.h
+	"figure.h"
+
+1506362413 d:\c++\projects_c\3_semestr\lab2\figure.h
+
+1505836544 source:d:\c++\projects_c\3_semestr\lab2\draw.c
+	<GL/glut.h>
+	<string.h>
+	"const.h"
+	"draw.h"
+
+1505929302 d:\c++\projects_c\3_semestr\lab2\const.h
+	"checker.h"
+
+1506108249 d:\c++\projects_c\3_semestr\lab2\draw.h
+
+1506511521 source:d:\c++\projects_c\3_semestr\lab2\figure.cpp
+	<GL/glut.h>
+	<string.h>
+	<iostream>
+	"figure.h"
+
+1506516477 source:d:\c++\projects_c\3_semestr\lab2\main.cpp
+	<GL/glut.h>
+	<iostream>
+	<cmath>
+	"figure.h"
+	"checker.h"
+	"keyboard.h"
+	"const.h"
+	"draw.h"
+
+1506512543 source:d:\c++\projects_c\3_semestr\lab2\draw.cpp
+	<GL/glut.h>
+	<string.h>
+	<cmath>
+	<iostream>
+	"const.h"
+	"draw.h"
+	"checker.h"
+
+1505838943 d:\c++\projects_c\3_semestr\lab2\keyboard.h
+
+1506105106 source:d:\c++\projects_c\3_semestr\lab2\keyboard.cpp
+	<GL/glut.h>
+	<iostream>
+	"keyboard.h"
+	"checker.h"
+	"const.h"
+
