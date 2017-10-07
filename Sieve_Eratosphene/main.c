@@ -1,5 +1,5 @@
 //**********************************
-// EUCLID_SIEVE
+// Sieve-of-Eratosphene
 //**********************************
 //
 //Created by Bramory 18.05.17
@@ -84,7 +84,7 @@ int main(int argc, char **argv)
     height = glutGet(GLUT_SCREEN_HEIGHT) * 0.91;
     glutInitWindowSize(width, height);
     glutInitWindowPosition(x_position, y_position);
-    glutCreateWindow("Euclid_Sieve");
+    glutCreateWindow("Sieve-of-Eratosphene");
 
     //Registration
     glutDisplayFunc(display);
