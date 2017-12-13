@@ -58,3 +58,62 @@
 	"game_tools.h"
 	"const.h"
 
+1507360931 source:d:\c++\projects\snake_bot\ai_play.c
+	<GL/glut.h>
+	<stdio.h>
+	<memory.h>
+	<stdlib.h>
+	"snake.h"
+	"game_tools.h"
+	"AI_PLAY.h"
+	"keyboard.h"
+	"const.h"
+
+1507360931 d:\c++\projects\snake_bot\snake.h
+
+1507360931 d:\c++\projects\snake_bot\game_tools.h
+
+1507360931 d:\c++\projects\snake_bot\ai_play.h
+
+1507360931 d:\c++\projects\snake_bot\keyboard.h
+
+1507360931 d:\c++\projects\snake_bot\const.h
+
+1507360931 source:d:\c++\projects\snake_bot\game_tools.c
+	<GL/glut.h>
+	<stdio.h>
+	<stdlib.h>
+	<limits.h>
+	<string.h>
+	<time.h>
+	"snake.h"
+	"game_tools.h"
+	"keyboard.h"
+	"const.h"
+
+1507360931 source:d:\c++\projects\snake_bot\keyboard.c
+	<stdio.h>
+	<stdlib.h>
+	"snake.h"
+	"keyboard.h"
+	"game_tools.h"
+	"const.h"
+
+1507360931 source:d:\c++\projects\snake_bot\main.c
+	<GL/glut.h>
+	<time.h>
+	<stdlib.h>
+	"snake.h"
+	"game_tools.h"
+	"keyboard.h"
+	"AI_PLAY.h"
+	"const.h"
+
+1507360931 source:d:\c++\projects\snake_bot\snake.c
+	<GL/glut.h>
+	<stdio.h>
+	<stdlib.h>
+	"snake.h"
+	"game_tools.h"
+	"const.h"
+

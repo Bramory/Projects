@@ -39,7 +39,6 @@ IntTree *aTree;
 IntList *aList;
 
 
-
 IntTree *createIntTree(void)
 {
 	IntTree *theTree = (IntTree *)malloc(sizeof(IntTree));

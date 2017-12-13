@@ -6,6 +6,7 @@
 #include <time.h>
 #include <stdlib.h>
 #include <stdio.h>
+#include <windows.h>
 
 #include "binary_tree.h"
 #include "draw.h"
@@ -34,7 +35,7 @@ void display(){
 
 void MyIdle(){
     display();
-    //Sleep(sleep);
+    Sleep(sleep);
     //glutSetWindowTitle("NothingToBeDone");
 }
 

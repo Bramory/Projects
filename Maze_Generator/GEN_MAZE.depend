@@ -1,0 +1,44 @@
+# depslib dependency file v1.0
+1511266341 source:d:\c++\projects\gen_maze\draw.cpp
+	<GL/glut.h>
+	<string.h>
+	<stdlib.h>
+	<stdio.h>
+	"draw.h"
+	"const.h"
+
+1507357331 d:\c++\projects\gen_maze\draw.h
+
+1507357331 d:\c++\projects\gen_maze\const.h
+
+1511266306 source:d:\c++\projects\gen_maze\keyboard.cpp
+	<GL/glut.h>
+	<stdio.h>
+	<stdbool.h>
+	<limits.h>
+	"keyboard.h"
+
+1507357331 d:\c++\projects\gen_maze\keyboard.h
+
+1511266341 source:d:\c++\projects\gen_maze\main.cpp
+	<GL/glut.h>
+	<time.h>
+	<stdlib.h>
+	<stdio.h>
+	<windows.h>
+	"keyboard.h"
+	"draw.h"
+	"mouse.h"
+	"const.h"
+
+1507357331 d:\c++\projects\gen_maze\mouse.h
+
+1511265939 source:d:\c++\projects\gen_maze\mouse.cpp
+	<GL/glut.h>
+	<stdio.h>
+	<stdbool.h>
+	<stdlib.h>
+	<limits.h>
+	"mouse.h"
+	"draw.h"
+
