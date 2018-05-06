@@ -20,5 +20,6 @@ int index (int i, int j);
 void renderBitmapString(float x, float y, void *font, char *string);
 void drawCell(cell *aCell);
 void draw_net(void);
+void highlight (int i, int j);
 
 #endif // DRAW_H_INCLUDED

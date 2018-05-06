@@ -8,6 +8,37 @@
 #include "draw.h"
 #include "const.h"
 
+void Initialize (){
+    glClearColor(0,0,0, 1.0);
+//    glMatrixMode(GL_PROJECTION);
+//    glLoadIdentity();
+    glOrtho(0, width, height, 0, -1, 1);
+}
+
+void removeWalls(cell *a, cell *b){
+     ///left-right parts
+    int x = a->i - b->i;
+    if (x == -1){
+        a->right = 0;
+        b->left = 0;
+    }
+    if (x == 1){
+        a->left = 0;
+        b->right = 0;
+    }
+
+    ///top-bottom parts
+    int y = a->j - b->j;
+    if (y == -1){
+        a->bottom = 0;
+        b->top = 0;
+    }
+    if (y == 1){
+        a->top = 0;
+        b->bottom = 0;
+    }
+}
+
 void MousePressed(int button, int state, int x, int y)
 {
     bool down = false;
@@ -30,7 +61,6 @@ void MousePressed(int button, int state, int x, int y)
 
             case GLUT_RIGHT_BUTTON:
                 glutSetWindowTitle("RightButtonPressed");
-
 
                 break;
         }

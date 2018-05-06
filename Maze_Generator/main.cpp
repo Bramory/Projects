@@ -24,114 +24,64 @@
 #include <time.h>
 #include <stdlib.h>
 #include <stdio.h>
-#include <windows.h> // for Sleep()
+#include <stack>
+#include <windows.h> /// for Sleep()
 
 #include "keyboard.h"
 #include "draw.h"
 #include "mouse.h"
 #include "const.h"
 
-//window position
-int x_position = 800;
-int y_position = 100;
-int width;
-int height;
+using namespace std;
 
-//for mouse coordinate
-int x = 0;
-int y = 0;
+stack <cell> stack_;
 
-//size of the square
-int w = 40;
+cell *Me;
 
-//for objects
-int N = 10;
-int cols;
-int rows;
-int pause = 1000;
-
-int MIN_VALUE;
-int MAX_VALUE;
-
-cell *stack;
-cell *cells;
-cell *current;
-
-void Initialize (){
-    glClearColor(0,0,0, 1.0);
-    glMatrixMode(GL_PROJECTION);
-    glLoadIdentity();
-    glOrtho(0, width, height, 0, -1, 1);
-}
-
-void removeWalls(cell *a, cell *b){
-     //left-right parts
-    int x = a->j - b->j;
-//    printf("a->i = %d\n", a->i);
-//    printf("a->j = %d\n", a->j);
-//    printf("b->i = %d\n", b->i);
-//    printf("b->j = %d\n", b->j);
-//    system("pause");
-    if (x == -1){
-        a->right = 0;
-        b->left = 0;
-    }
-    else
-        if (x == 1){
-            a->left = 0;
-            b->right = 0;
-        }
-
-    //top-bottom parts
-    int y = a->i - b->i;
-    if (y == 1){
-        a->top = 0;
-        b->bottom = 0;
-    }
-    else
-        if (y == -1){
-            a->bottom = 0;
-            b->top = 0;
-        }
-}
-
-void highlight (cell *aCell){
-    int x = aCell->i * w;
-    int y = aCell->j * w;
-
-    glColor3f(1,0,1);
-    glRecti(x,y,
-           x+w, y+w);
-}
 
 void display(){
     glClear(GL_COLOR_BUFFER_BIT);
 
-    for(int i = 0; i < N*N; i++ )
-        drawCell(&cells[i]);
+    ///all work is done!
+    //if(current->value == 0 && cells[index(rows-1, cols-1)].visited){
+      for(int i = 0; i < rows*cols; i++ ){
+                glColor3f(0.2, 0.2, 0.2);
+                drawCell(&cells[i]);
+            }
+        glColor3f(1,0,1);
+        highlight(current->i, current->j);
 
+        glColor3f(0, 1, 1);
+        highlight(Me->i, Me->j);
+        //glutSwapBuffers();
+    //}
+    /// continue building...
+    //else{
+        ///Step 1
+        cell *next = checkNeighbors(current);
 
-    highlight(current);
-    //Step 1
-    cell *next = checkNeighbors(current);
+        /// have neighbors
+        if (next){
+            ///Step 2
+            stack_.push(*current);
 
-    // have neighbors
-    if (next){
-        //Step 2
+            ///Step 3
+            removeWalls(&cells[index(current->i, current->j)],
+                        &cells[index(next->i   ,    next->j)]);
 
-        //Step 3
-        removeWalls(current, next);
+            ///Step 4
+            current = next;
+            cells[index(current->i, current->j)].visited = 1;
+        }
+        else
+            if( !stack_.empty() ){
+                current = &stack_.top();
+                stack_.pop();
+            }
+        //}
 
-        //Step 4
-        cells[index(current->i, current->j)].visited = 1;
-        current = next;
-//        printf("current #%d\n", current->value);
-//        printf("visited #%d\n", current->visited);
-    }
-    else{
-
-    }
-    glutSwapBuffers();
+/// for visualizing how it works
+glutSwapBuffers();
 }
 
 void timer(int a){
@@ -139,23 +89,24 @@ void timer(int a){
     glutTimerFunc(pause, timer, 0);
 }
 
-void MyIdle(){
-    display();
-    Sleep(pause);
-}
+//void MyIdle(){
+//    display();
+//    Sleep(pause);
+//}
 
 int main(int argc, char **argv){
     srand(time(0));
 
-    width  = 400;//glutGet(GLUT_SCREEN_WIDTH);
-    height = 400;//glutGet(GLUT_SCREEN_HEIGHT) * 0.91;
+    width  = glutGet(GLUT_SCREEN_HEIGHT)*0.8;
+    height = glutGet(GLUT_SCREEN_HEIGHT)*0.8;
     cols = width/w;
     rows = height/w;
     printf("cols = %d\n", cols);
     printf("rows = %d\n", rows);
-    cells = (cell*)malloc(sizeof(cell)* (N*N));
+    cells = (cell*)malloc(sizeof(cell)* (cols*rows));
+    Me = (cell*)malloc(sizeof(cell)* 1);
 
-    //Initializing cells with 4 walls
+    ///Initializing cells with 4 walls
     for(int i = 0; i < rows; i++ ){
         for(int j = 0; j < cols; j++ ){
             int in = j * cols + i;
@@ -173,25 +124,30 @@ int main(int argc, char **argv){
     current = &cells[0];
     current->visited = 1;
 
-    //Initialization
+    Me->i = 0;
+    Me->j = 0;
+    Me->value = 1;
+    Me->visited = 1;
+
+    ///Initialization
     glutInit(&argc, argv);
     glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB);
     glutInitWindowSize(width, height);
     glutInitWindowPosition(x_position, y_position);
     glutCreateWindow("MAZE");
 
-    //Registration
+    ///Registration
     glutDisplayFunc(display);
     Initialize();
     glutTimerFunc(pause, timer, 0);
     glutKeyboardFunc(Keyboard);
     glutSpecialFunc(SKeyboard);
-    glutIdleFunc(MyIdle);
-    glutMouseFunc(MousePressed);
-    glutPassiveMotionFunc(MouseMove);
-    glutMotionFunc(MousePressedMove);
-    glutTimerFunc(200, timer, 0);
+//    glutIdleFunc(MyIdle);
+//    glutMouseFunc(MousePressed);
+//    glutPassiveMotionFunc(MouseMove);
+//    glutMotionFunc(MousePressedMove);
     glutMainLoop();
 
+    free(cells);
     return 0;
 }

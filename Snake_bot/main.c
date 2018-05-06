@@ -14,16 +14,16 @@
 #include "AI_PLAY.h"
 #include "const.h"
 
-int N = 6;
-int scl = 40;
-int AI_STATE = 1;
-int interfaceState = -1;
+int N = 10; //amount of cells on a one side
+int scl = 30;
+int AI_STATE = 1; // on AI
+int interfaceState = 1; //off console info
 int Debug = 0;
-int LIVES = 10;
-int MODE = 1;
+int LIVES = 3;
+int MODE = 0; // default difficult
 
 //for simulate inside simulating
-int DeepMind = 0;
+int DeepMind = 1;
 
 void Initialize (float r, float g, float b){
     glClearColor(r, g, b, 0);
@@ -36,7 +36,7 @@ void display(){
     //clean screen buffer
     glClear(GL_COLOR_BUFFER_BIT);
 
-    pause = 50;
+    //pause = 50;
     char key;
     //key = perfectSnake(aRealSnake, cells, aFood);
     if (AI_STATE == 1){
@@ -56,7 +56,7 @@ void display(){
     GameOver();
     }
     snakeEat(aRealSnake, aFood);  // ? at this moment, where is a food?
-    //effects(aRealSnake, aFood, difficulty); // for random mode
+            effects(aRealSnake, aFood, difficulty); // for random mode
     cellsUpdate(aRealSnake, cells);  // for detect a snake-circle
 
     //drawing
@@ -66,8 +66,8 @@ void display(){
     drawNet();
     if (Debug)
         drawCells(cells); // debug
-//   if (triggerShield)
-//       drawShield(aShield);
+   if (triggerShield)
+       drawShield(aShield);
 
     feature(aRealSnake, cells, aFood); //for repeating moves
     glutSwapBuffers();

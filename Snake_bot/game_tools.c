@@ -33,7 +33,7 @@ float award = 0;
 int pause;
 
 //triggers
-int triggerShield = 0;
+int triggerShield = 1;
 int aRecordLength = 0;
 int aStepsWithoutFood = 1;
 int aRecordWithoutFood = 0;
@@ -147,7 +147,7 @@ void setCells(object *cells){
 void drawShield(object *aShield){
     if (NULL == aShield)
         return;
-    glColor3f(1, 0, 1);
+    glColor3f(r,g,b);
     glRecti(aShield->x_pos, aShield->y_pos,
             aShield->x_pos + aShield->value * scl, aShield->y_pos + aShield->value * scl);
 }
@@ -291,13 +291,13 @@ void drawNet(void){
         aSnake->lives ++;
 
     //% chance for "SHIT_HAPPENS"
-    int percent = 5;
+    int percent = 10;
     if ( rand() % 100 >= percent)
         return;
 
     AGAIN:{
-         int effect = rand() % 10;
-    //     effect = 6; //debug effects
+         int effect = rand() % 5;
+         //effect = 3; //debug effects
          switch (effect)
          {
             //nothing to do
