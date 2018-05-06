@@ -1,4 +1,5 @@
 
 *.exe
 *.layout
-*.o
+*.o.log
+*

@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1497954066 source:d:\c++\projects_c\glut_projects\snake 2\ai_play.c
+1519240740 source:d:\repo\projects\snake_bot\ai_play.c
 	<GL/glut.h>
 	<stdio.h>
 	<memory.h>
@@ -8,113 +8,6 @@
 	"game_tools.h"
 	"AI_PLAY.h"
 	"keyboard.h"
-	"const.h"
-
-1497897344 d:\c++\projects_c\glut_projects\snake 2\snake.h
-
-1497740616 d:\c++\projects_c\glut_projects\snake 2\game_tools.h
-
-1497889917 d:\c++\projects_c\glut_projects\snake 2\ai_play.h
-
-1497863478 d:\c++\projects_c\glut_projects\snake 2\keyboard.h
-
-1497903616 d:\c++\projects_c\glut_projects\snake 2\const.h
-
-1504884499 source:d:\c++\projects_c\glut_projects\snake 2\game_tools.c
-	<GL/glut.h>
-	<stdio.h>
-	<stdlib.h>
-	<limits.h>
-	<string.h>
-	<time.h>
-	"snake.h"
-	"game_tools.h"
-	"keyboard.h"
-	"const.h"
-
-1497863572 source:d:\c++\projects_c\glut_projects\snake 2\keyboard.c
-	<stdio.h>
-	<stdlib.h>
-	"snake.h"
-	"keyboard.h"
-	"game_tools.h"
-	"const.h"
-
-1504884547 source:d:\c++\projects_c\glut_projects\snake 2\main.c
-	<GL/glut.h>
-	<time.h>
-	<stdlib.h>
-	"snake.h"
-	"game_tools.h"
-	"keyboard.h"
-	"AI_PLAY.h"
-	"const.h"
-
-1497949668 source:d:\c++\projects_c\glut_projects\snake 2\snake.c
-	<GL/glut.h>
-	<stdio.h>
-	<stdlib.h>
-	"snake.h"
-	"game_tools.h"
-	"const.h"
-
-1507360931 source:d:\c++\projects\snake_bot\ai_play.c
-	<GL/glut.h>
-	<stdio.h>
-	<memory.h>
-	<stdlib.h>
-	"snake.h"
-	"game_tools.h"
-	"AI_PLAY.h"
-	"keyboard.h"
-	"const.h"
-
-1507360931 d:\c++\projects\snake_bot\snake.h
-
-1507360931 d:\c++\projects\snake_bot\game_tools.h
-
-1507360931 d:\c++\projects\snake_bot\ai_play.h
-
-1507360931 d:\c++\projects\snake_bot\keyboard.h
-
-1507360931 d:\c++\projects\snake_bot\const.h
-
-1520086886 source:d:\c++\projects\snake_bot\game_tools.c
-	<GL/glut.h>
-	<stdio.h>
-	<stdlib.h>
-	<limits.h>
-	<string.h>
-	<time.h>
-	"snake.h"
-	"game_tools.h"
-	"keyboard.h"
-	"const.h"
-
-1520086125 source:d:\c++\projects\snake_bot\keyboard.c
-	<stdio.h>
-	<stdlib.h>
-	"snake.h"
-	"keyboard.h"
-	"game_tools.h"
-	"const.h"
-
-1523795262 source:d:\c++\projects\snake_bot\main.c
-	<GL/glut.h>
-	<time.h>
-	<stdlib.h>
-	"snake.h"
-	"game_tools.h"
-	"keyboard.h"
-	"AI_PLAY.h"
-	"const.h"
-
-1507360931 source:d:\c++\projects\snake_bot\snake.c
-	<GL/glut.h>
-	<stdio.h>
-	<stdlib.h>
-	"snake.h"
-	"game_tools.h"
 	"const.h"
 
 983694786 c:\program files (x86)\codeblocks\mingw\include\gl\glut.h
@@ -346,10 +239,58 @@
 1341006774 c:\program files (x86)\codeblocks\mingw\include\memory.h
 	<string.h>
 
+1519240740 d:\repo\projects\snake_bot\snake.h
+
+1519240740 d:\repo\projects\snake_bot\game_tools.h
+
+1519240740 d:\repo\projects\snake_bot\ai_play.h
+
+1519240740 d:\repo\projects\snake_bot\keyboard.h
+
+1519240740 d:\repo\projects\snake_bot\const.h
+
+1520086886 source:d:\repo\projects\snake_bot\game_tools.c
+	<GL/glut.h>
+	<stdio.h>
+	<stdlib.h>
+	<limits.h>
+	<string.h>
+	<time.h>
+	"snake.h"
+	"game_tools.h"
+	"keyboard.h"
+	"const.h"
+
 1341006774 c:\program files (x86)\codeblocks\mingw\include\limits.h
 	<_mingw.h>
 
 1341006776 c:\program files (x86)\codeblocks\mingw\include\time.h
 	<_mingw.h>
 	<stddef.h>
+
+1520086124 source:d:\repo\projects\snake_bot\keyboard.c
+	<stdio.h>
+	<stdlib.h>
+	"snake.h"
+	"keyboard.h"
+	"game_tools.h"
+	"const.h"
+
+1523795744 source:d:\repo\projects\snake_bot\main.c
+	<GL/glut.h>
+	<time.h>
+	<stdlib.h>
+	"snake.h"
+	"game_tools.h"
+	"keyboard.h"
+	"AI_PLAY.h"
+	"const.h"
+
+1519240740 source:d:\repo\projects\snake_bot\snake.c
+	<GL/glut.h>
+	<stdio.h>
+	<stdlib.h>
+	"snake.h"
+	"game_tools.h"
+	"const.h"
 

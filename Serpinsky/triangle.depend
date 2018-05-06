@@ -1,9 +1,0 @@
-# depslib dependency file v1.0
-1495742186 source:d:\c++\projects_c\glut_projects\serpinsky\constants.c
-
-1495732918 source:d:\c++\projects_c\glut_projects\serpinsky\draw.c
-	<GL/glut.h>
-	"draw.h"
-
-1495733456 d:\c++\projects_c\glut_projects\serpinsky\draw.h
-
